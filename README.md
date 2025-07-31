@@ -12,10 +12,13 @@ This FastAPI service helps select an optimal team of products within a given bud
   - Exactly 5 products in the team
 - **Result:** Returns the list of products forming the best-value team.
 
+## Set up
+
+```
+$ docker-compose build
+$ docker-compose up
+```
 ## Usage
 
-Send a GET request to `/team-builder?budget=YOUR_BUDGET` to receive the optimized product team.
-
----
-
-This method ensures a balanced, diverse, and cost-effective selection of products.
+Direct your browser to http://localhost:3000 for a frontend app
+or send a GET request to http://localhost:8000/team-builder?budget=YOUR_BUDGET to access backend directly.
